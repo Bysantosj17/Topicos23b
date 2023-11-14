@@ -1,11 +1,11 @@
 @extends('layouts.dashboard')
-@section('title', 'Actualizar cliente')
-@section('subtitulo', 'ACTUALIZAR CLIENTE')
+@section('title', 'Ediatar cliente')
+@section('subtitulo', 'EDITAR CLIENTE')
 @section('content-dashboard')
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <h1>Actualizar Cliente: </h1>
+    <h1>Editar Cliente: </h1>
     <fieldset>
-        <form action="{{route('clientes.actualizar_reg_cliente', $cliente)}}" method="POST">
+        <form action="{{route('clientes.actualizar', $cliente)}}" method="POST">
 
             @csrf
 
@@ -30,7 +30,7 @@
                 Telefono:</br>
                 <input type="number" name="telefono" min="10" value='{{$cliente->telefono}}'>
             </label>
-
+            </br>
             <label>
                 Correo electronico:</br>
                 <input type="email" name="email" value='{{$cliente->email}}'>
@@ -45,14 +45,15 @@
                 RFC:</br>
                 <input type="text" name="rfc" value='{{$cliente->rfc}}'>
             </label>
-
+            </br>
             <label>
                 Descripcion:</br>
                 <textarea type="text" name="descripcion">{{$cliente->descripcion}}
                 </textarea>
             </label></br>
-            <button type="submit">Actualizar cliente</button>
+            <center><button class="botones" type="submit" onclick="return confirm('¿Desea guardar cliente?');">Actualizar cliente</button></center>
         </form>
     </fieldset>
+    <h3><a href="{{route('clientes.inicio')}}">Volver a los clientes</a></h3>
 </div>
 @endsection

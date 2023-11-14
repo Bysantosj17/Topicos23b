@@ -1,6 +1,10 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\ProveedoresController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +26,25 @@ Route::controller(ClientesController::class)->group(function(){
     Route::get('clientes', 'InicioClientes')->name('clientes.inicio');
     Route::get('clientes/registro', 'RegistroClientes')->name('clientes.registro');
     Route::get('clientes/detalle_cliente/{cliente}', 'DetalleCliente')->name('clientes.detalle');
+    Route::get('clientes/{cliente}/editar_cliente', 'EditarCliente')->name('clientes.editar');
 
     Route::post('clientes', 'AlmacenarRegistro')->name('clientes.almacenar_registro');
+
+    Route::put('clientes/{cliente}', 'ActualizarCliente')->name('clientes.actualizar');
+
+    Route::delete('clientes/{cliente}', 'EliminarCliente')->name('clientes.eliminar');
+});
+
+Route::controller(ProductosController::class)->group(function(){
+    Route::get('productos', 'InicioProductos')->name('productos.inicio');
+    Route::get('productos/detalle_producto/{producto}', 'DetalleProducto')->name('productos.detalle');
+});
+
+Route::controller(ProveedoresController::class)->group(function(){
+    Route::get('proveedores', 'InicioProveedores')->name('proveedores.inicio');
+    Route::get('proveedores/detalle_proveedor/{proveedor}', 'DetalleProveedor')->name('proveedores.detalle');
+});
+
+Route::controller(UsuariosController::class)->group(function(){
+    Route::get('usuarios/user', 'InicioUsuarios')->name('usuarios.inicio');
 });

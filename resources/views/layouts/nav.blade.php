@@ -70,11 +70,8 @@
           </div>
         </a>
         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-          <a class="dropdown-item ps-3 border-radius-md mb-1" href="">
+          <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{route('proveedores.inicio')}}">
             Inicio Proveedor
-          </a>
-          <a class="dropdown-item ps-3 border-radius-md mb-1" href="">
-            Detalle Proveedor
           </a>
           <a class="dropdown-item ps-3 border-radius-md mb-1" href="">
             Registro Proveedor
@@ -92,7 +89,7 @@
           </div>
         </a>
         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-          <a class="dropdown-item ps-3 border-radius-md mb-1" href="">
+          <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{route('productos.inicio')}}">
             Inicio Producto
           </a>
           <a class="dropdown-item ps-3 border-radius-md mb-1" href="">
@@ -111,10 +108,10 @@
           </div>
         </a>
         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-          <a class="dropdown-item ps-3 border-radius-md mb-1"">
+          <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{route('clientes.inicio')}}">
             Clientes
           </a>
-          <a class="dropdown-item ps-3 border-radius-md mb-1"">
+          <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{ route('clientes.registro')}}">
             Registro Cliente
           </a>
         </div>
@@ -130,8 +127,8 @@
           </div>
         </a>
         <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
-          <a class="dropdown-item ps-3 border-radius-md mb-1"">
-            Detalla Usuario
+          <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{route('usuarios.inicio')}}">
+            Inicio Usuario
           </a>
           <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/attention-catchers/modals.html">
             Registro Usuario

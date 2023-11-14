@@ -4,11 +4,18 @@
 @section('content-dashboard')
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <h1>Inicio Cliente</h1>
-    <a href="{{route('clientes.registro')}}">Crear cliente</a>
+    <h2><a href="{{route('clientes.registro')}}">Crear cliente</a></h2>
     <ul>
         @foreach ($clientes as $cliente)
             <li>
-                <a href="{{route('clientes.detalle', $cliente->id)}}">{{$cliente->nombres}}</a>
+                <h4>{{$cliente->nombres}}</h4> <a class="botones" href="{{route('clientes.editar', $cliente->id)}}">Editar</a>
+                </br></br>
+                <form action="{{route('clientes.eliminar', $cliente)}}" method="POST">
+                    @csrf
+                    @method('delete')
+                    <button class="botones_eliminar" type="submit" onclick="return confirm('Estás seguro que deseas eliminar el registro?');">Eliminar</button>
+                </form>
+                <hr>
             </li>
         @endforeach
     </ul>
