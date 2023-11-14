@@ -14,7 +14,7 @@
     <h6>Fecha de caducidad: </h6><p><strong>{{ $producto->fecha_caducidad }}</strong></p>
     <h6>Descripcion: </h6><p><strong>{{ $producto->descripcion }}</strong></p>
 
-    <h4><a href="#">Editar producto</a></h4>
+    <h4><a href="{{route('productos.editar', $producto)}}">Editar producto</a></h4>
     <h3><a href="{{route('productos.inicio')}}">Volver a los productos</a></h3>
 </div>
 

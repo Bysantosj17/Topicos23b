@@ -1,66 +1,66 @@
-  <!-- Navbar -->
-  <div class="container position-sticky z-index-sticky top-0"><div class="row"><div class="col-12">
+<!-- Navbar -->
+<div class="container position-sticky z-index-sticky top-0"><div class="row"><div class="col-12">
     <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
-      <div class="container-fluid px-0">
+    <div class="container-fluid px-0">
         <a class="navbar-brand font-weight-bolder ms-sm-3" href="">
-          SANTOS URIEL BARBOSA SANDOVAL
+        SANTOS URIEL BARBOSA SANDOVAL
         </a>
         <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon mt-2">
+        <span class="navbar-toggler-icon mt-2">
             <span class="navbar-toggler-bar bar1"></span>
             <span class="navbar-toggler-bar bar2"></span>
             <span class="navbar-toggler-bar bar3"></span>
-          </span>
+        </span>
         </button>
         <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
-          <ul class="navbar-nav navbar-nav-hover ms-auto">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
             <li class="nav-item dropdown dropdown-hover mx-2">
-              <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="material-icons opacity-6 me-2 text-md">dashboard</i>
                 Pages
                 <img src="{{asset('/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-auto ms-md-2">
-              </a>
-              <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
                 <div class="d-none d-lg-block">
-      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
         Account
-      </h6>
+    </h6>
 
     </div>
 
     <div class="d-lg-none">
-      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
+    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
         Landing Pages
-      </h6>
+    </h6>
 
-      <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
+    <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
         <span>About Us</span>
-      </a>
-      <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
+    </a>
+    <a href="./pages/contact-us.html" class="dropdown-item border-radius-md">
         <span>Contact Us</span>
-      </a>
-      <a href="./pages/author.html" class="dropdown-item border-radius-md">
+    </a>
+    <a href="./pages/author.html" class="dropdown-item border-radius-md">
         <span>Author</span>
-      </a>
+    </a>
 
-      <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
+    <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
         Account
-      </h6>
+    </h6>
 
     </div>
 
-              </div>
+            </div>
             </li>
 
             <li class="nav-item dropdown dropdown-hover mx-2">
-              <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="material-icons opacity-6 me-2 text-md">view_day</i>
                 Sections
                 <img src="{{asset('/assets/img/down-arrow-dark.svg')}}" alt="down-arrow" class="arrow ms-auto ms-md-2">
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md dropdown-md-responsive p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuBlocks">
                 <div class="d-none d-lg-block">
-      <li class="nav-item dropdown dropdown-hover dropdown-subitem">
+    <li class="nav-item dropdown dropdown-hover dropdown-subitem">
         <a class="dropdown-item py-2 ps-3 border-radius-md" href="./presentation.html">
           <div class="w-100 d-flex align-items-center justify-content-between">
             <div>
@@ -92,7 +92,7 @@
           <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{route('productos.inicio')}}">
             Inicio Producto
           </a>
-          <a class="dropdown-item ps-3 border-radius-md mb-1" href="">
+          <a class="dropdown-item ps-3 border-radius-md mb-1" href="{{route('productos.registro')}}">
             Registor Producto
           </a>
         </div>
@@ -149,10 +149,10 @@
           </div>
         </div>
         <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/hero-sections.html">
-          Page Headers
+        Page Headers
         </a>
         <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/features.html">
-          Features
+        Features
         </a>
 
         <div class="d-flex mb-2 mt-3">

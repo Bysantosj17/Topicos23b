@@ -8,7 +8,7 @@
     <ul>
         @foreach ($clientes as $cliente)
             <li>
-                <h4>{{$cliente->nombres}}</h4> <a class="botones" href="{{route('clientes.editar', $cliente->id)}}">Editar</a>
+                <h4><a href="{{route('clientes.detalle', $cliente)}}">{{$cliente->nombres}} {{$cliente->ap_paterno}} {{$cliente->ap_materno}}</h4></a> <a class="botones" href="{{route('clientes.editar', $cliente->id)}}">Editar</a>
                 </br></br>
                 <form action="{{route('clientes.eliminar', $cliente)}}" method="POST">
                     @csrf

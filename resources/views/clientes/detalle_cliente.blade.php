@@ -7,7 +7,7 @@
 
     <h1><center>Bienvenido a la vista de detalle cliente</center></h1>
     </br>
-    <h2>Cliente: {{$cliente->nombres, $cliente->ap_paterno, $cliente->ap_materno }}</h2>
+    <h2>Cliente: {{$cliente->nombres}} {{$cliente->ap_paterno}} {{$cliente->ap_materno}}</h2>
     <h6>Telefono:</h6><p><strong>{{ $cliente->telefono }}</strong></p>
     <h6>Email: </h6><p><Strong>{{ $cliente->email }}</Strong></p>
     <h6>RFC: </h6><p><strong>{{ $cliente->rfc }}</strong></p>

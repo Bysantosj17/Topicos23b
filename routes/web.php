@@ -37,7 +37,15 @@ Route::controller(ClientesController::class)->group(function(){
 
 Route::controller(ProductosController::class)->group(function(){
     Route::get('productos', 'InicioProductos')->name('productos.inicio');
+    Route::get('productos/registro', 'RegistroProducto')->name('productos.registro');
     Route::get('productos/detalle_producto/{producto}', 'DetalleProducto')->name('productos.detalle');
+    Route::get('productos/{producto}/editar_producto', 'EditarProducto')->name('productos.editar');
+
+    Route::post('productos', 'AlmacenarRegstro')->name('productos.almacenar_registro');
+
+    Route::put('productos/{producto}', 'ActualizarProducto')->name('productos.actualizar');
+
+    Route::delete('productos/{producto}', 'EliminarProducto')->name('productos.eliminar');
 });
 
 Route::controller(ProveedoresController::class)->group(function(){
@@ -48,3 +56,7 @@ Route::controller(ProveedoresController::class)->group(function(){
 Route::controller(UsuariosController::class)->group(function(){
     Route::get('usuarios/user', 'InicioUsuarios')->name('usuarios.inicio');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

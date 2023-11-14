@@ -6,19 +6,19 @@
     <h1>Registro Cliente:</h1>
     <fieldset>
         <form action="{{route('clientes.almacenar_registro')}}" method="POST">
-            
+
             @csrf
 
             <label>
                 Nombres:</br>
                 <input type="text" name="nombres">
             </label>
-    
+
             <label>
                 Apellido paterno:</br>
                 <input type="text" name="ap_paterno">
             </label>
-    
+
             <label>
                 Apellido materno:</br>
                 <input type="text" name="ap_materno">
@@ -33,17 +33,17 @@
                 Correo electronico:</br>
                 <input type="email" name="email">
             </label>
-    
+
             <label>
                 Direccion;</br>
                 <input type="text" name="direccion">
             </label>
-    
+
             <label>
                 RFC:</br>
                 <input type="text" name="rfc">
             </label>
-    
+
             <label>
                 Descripcion:</br>
                 <input type="text" name="descripcion">
@@ -51,5 +51,5 @@
             <button type="submit">Registrar Cliente</button>
         </form>
     </fieldset>
-</div>  
+</div>
 @endsection

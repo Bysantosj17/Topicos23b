@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Ediatar cliente')
+@section('title', 'Editar cliente')
 @section('subtitulo', 'EDITAR CLIENTE')
 @section('content-dashboard')
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
