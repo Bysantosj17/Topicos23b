@@ -27,12 +27,12 @@
       </h6>
 
     </div>
-    
+
     <div class="d-lg-none">
       <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1">
         Landing Pages
       </h6>
-    
+
       <a href="./pages/about-us.html" class="dropdown-item border-radius-md">
         <span>About Us</span>
       </a>
@@ -42,16 +42,16 @@
       <a href="./pages/author.html" class="dropdown-item border-radius-md">
         <span>Author</span>
       </a>
-    
+
       <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-1 mt-3">
         Account
       </h6>
-    
+
     </div>
-    
+
               </div>
             </li>
-    
+
             <li class="nav-item dropdown dropdown-hover mx-2">
               <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="material-icons opacity-6 me-2 text-md">view_day</i>
@@ -81,7 +81,7 @@
           </a>
         </div>
       </li>
-    
+
       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
         <a class="dropdown-item py-2 ps-3 border-radius-md" href="./presentation.html">
           <div class="w-100 d-flex align-items-center justify-content-between">
@@ -100,7 +100,7 @@
           </a>
         </div>
       </li>
-    
+
       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
         <a class="dropdown-item py-2 ps-3 border-radius-md" href="">
           <div class="w-100 d-flex align-items-center justify-content-between">
@@ -119,7 +119,7 @@
           </a>
         </div>
       </li>
-    
+
       <li class="nav-item dropdown dropdown-hover dropdown-subitem">
         <a class="dropdown-item py-2 ps-3 border-radius-md" href="./presentation.html">
           <div class="w-100 d-flex align-items-center justify-content-between">
@@ -138,7 +138,7 @@
           </a>
         </div>
       </li>
-    
+
     <div class="row d-lg-none">
       <div class="col-md-12">
         <div class="d-flex mb-2">
@@ -157,7 +157,7 @@
         <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/page-sections/features.html">
           Features
         </a>
-    
+
         <div class="d-flex mb-2 mt-3">
           <div class="icon h-10 me-3 d-flex mt-1">
             <i class="ni ni-laptop text-gradient text-primary"></i>
@@ -177,8 +177,8 @@
         <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/navigation/pagination.html">
           Pagination
         </a>
-    
-    
+
+
         <div class="d-flex mb-2 mt-3">
           <div class="icon h-10 me-3 d-flex mt-1">
             <i class="ni ni-badge text-gradient text-primary"></i>
@@ -195,8 +195,8 @@
         <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/input-areas/forms.html">
           Forms
         </a>
-    
-    
+
+
         <div class="d-flex mb-2 mt-3">
           <div class="icon h-10 me-3 d-flex mt-1">
             <i class="ni ni-notification-70 text-gradient text-primary"></i>
@@ -216,8 +216,8 @@
         <a class="dropdown-item ps-3 border-radius-md mb-1" href="./sections/attention-catchers/tooltips-popovers.html">
           Tooltips & Popovers
         </a>
-    
-    
+
+
         <div class="d-flex mb-2 mt-3">
           <div class="icon h-10 me-3 d-flex mt-1">
             <i class="ni ni-app text-gradient text-primary"></i>

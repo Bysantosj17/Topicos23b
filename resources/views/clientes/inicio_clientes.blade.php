@@ -4,7 +4,7 @@
 @section('content-dashboard')
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <h1>Inicio Cliente</h1>
-    <a href="">Crear cliente</a>
+    <a href="{{route('clientes.registro')}}">Crear cliente</a>
     <ul>
         @foreach ($clientes as $cliente)
             <li>
@@ -13,5 +13,5 @@
         @endforeach
     </ul>
 
-</div>  
+</div>
 @endsection
